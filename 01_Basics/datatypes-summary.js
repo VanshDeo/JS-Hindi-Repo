@@ -37,3 +37,26 @@ const myFunction = function() {
 console.log(typeof myFunction); // function; In more detail we can say it's type is Object function
 
 // Note : We can easily figure out that JS is dynamically typed programming language
+
+// *********************************************************************************************************************
+
+// Stack => Primitive; Heap => Non Primitive
+
+let myYoutubeName = "ChaiaurCode";
+
+let anotherName = myYoutubeName
+anotherName = "chaiaurcode.com"
+
+console.log(anotherName);
+console.log(myYoutubeName);
+
+let userOne = {
+    email : "user@google.com",
+    upi : "user@axl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "vansh@google.com"
+console.log(userOne);
+console.log(userTwo);
